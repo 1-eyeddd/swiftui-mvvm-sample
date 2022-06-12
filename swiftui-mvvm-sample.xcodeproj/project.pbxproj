@@ -14,6 +14,9 @@
 		37B490CB2855B1F3009AF2E2 /* swiftui_mvvm_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B490CA2855B1F3009AF2E2 /* swiftui_mvvm_sampleTests.swift */; };
 		37B490D52855B1F3009AF2E2 /* swiftui_mvvm_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B490D42855B1F3009AF2E2 /* swiftui_mvvm_sampleUITests.swift */; };
 		37B490D72855B1F3009AF2E2 /* swiftui_mvvm_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B490D62855B1F3009AF2E2 /* swiftui_mvvm_sampleUITestsLaunchTests.swift */; };
+		37B490EC2855BA25009AF2E2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B490EB2855BA25009AF2E2 /* Colors.xcassets */; };
+		37B490FA2855C31E009AF2E2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B490F92855C31E009AF2E2 /* Formatters.swift */; };
+		37B490FD2855C387009AF2E2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B490FC2855C387009AF2E2 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		37B490D02855B1F3009AF2E2 /* swiftui-mvvm-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-mvvm-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B490D42855B1F3009AF2E2 /* swiftui_mvvm_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_mvvm_sampleUITests.swift; sourceTree = "<group>"; };
 		37B490D62855B1F3009AF2E2 /* swiftui_mvvm_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_mvvm_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37B490EB2855BA25009AF2E2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		37B490F92855C31E009AF2E2 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		37B490FC2855C387009AF2E2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +100,16 @@
 		37B490B82855B1F1009AF2E2 /* swiftui-mvvm-sample */ = {
 			isa = PBXGroup;
 			children = (
-				37B490B92855B1F1009AF2E2 /* swiftui_mvvm_sampleApp.swift */,
-				37B490BB2855B1F1009AF2E2 /* ContentView.swift */,
-				37B490BD2855B1F3009AF2E2 /* Assets.xcassets */,
-				37B490BF2855B1F3009AF2E2 /* Preview Content */,
+				37B490F32855BFBE009AF2E2 /* Apps */,
+				37B490E32855B780009AF2E2 /* Config */,
+				37B490F02855BD34009AF2E2 /* Utils */,
+				37B490F12855BE56009AF2E2 /* Services */,
+				37B490ED2855BC8B009AF2E2 /* Models */,
+				37B490EF2855BD09009AF2E2 /* Views */,
+				37B490EE2855BC99009AF2E2 /* ViewModels */,
+				37B490EA2855B880009AF2E2 /* Resources */,
 			);
 			path = "swiftui-mvvm-sample";
-			sourceTree = "<group>";
-		};
-		37B490BF2855B1F3009AF2E2 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				37B490C02855B1F3009AF2E2 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		37B490C92855B1F3009AF2E2 /* swiftui-mvvm-sampleTests */ = {
@@ -125,6 +127,149 @@
 				37B490D62855B1F3009AF2E2 /* swiftui_mvvm_sampleUITestsLaunchTests.swift */,
 			);
 			path = "swiftui-mvvm-sampleUITests";
+			sourceTree = "<group>";
+		};
+		37B490E32855B780009AF2E2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				37B490E92855B805009AF2E2 /* Firebase */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		37B490E62855B7C3009AF2E2 /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Staging;
+			sourceTree = "<group>";
+		};
+		37B490E72855B7E4009AF2E2 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		37B490E82855B7EC009AF2E2 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		37B490E92855B805009AF2E2 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				37B490E62855B7C3009AF2E2 /* Staging */,
+				37B490E82855B7EC009AF2E2 /* Release */,
+				37B490E72855B7E4009AF2E2 /* Debug */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		37B490EA2855B880009AF2E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37B490BD2855B1F3009AF2E2 /* Assets.xcassets */,
+				37B490C02855B1F3009AF2E2 /* Preview Assets.xcassets */,
+				37B490EB2855BA25009AF2E2 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37B490ED2855BC8B009AF2E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		37B490EE2855BC99009AF2E2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				37B490F72855C16D009AF2E2 /* Common */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		37B490EF2855BD09009AF2E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37B490F62855C149009AF2E2 /* Common */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37B490F02855BD34009AF2E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				37B490F22855BF85009AF2E2 /* Extensions */,
+				37B490F82855C302009AF2E2 /* Formatters */,
+				37B490FB2855C354009AF2E2 /* Constants */,
+				37B490FE2855C422009AF2E2 /* UI */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		37B490F12855BE56009AF2E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		37B490F22855BF85009AF2E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37B490F32855BFBE009AF2E2 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				37B490B92855B1F1009AF2E2 /* swiftui_mvvm_sampleApp.swift */,
+				37B490BB2855B1F1009AF2E2 /* ContentView.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		37B490F62855C149009AF2E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		37B490F72855C16D009AF2E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		37B490F82855C302009AF2E2 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				37B490F92855C31E009AF2E2 /* Formatters.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		37B490FB2855C354009AF2E2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				37B490FC2855C387009AF2E2 /* Endpoint.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		37B490FE2855C422009AF2E2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B490EC2855BA25009AF2E2 /* Colors.xcassets in Resources */,
 				37B490C12855B1F3009AF2E2 /* Preview Assets.xcassets in Resources */,
 				37B490BE2855B1F3009AF2E2 /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +405,8 @@
 			files = (
 				37B490BC2855B1F1009AF2E2 /* ContentView.swift in Sources */,
 				37B490BA2855B1F1009AF2E2 /* swiftui_mvvm_sampleApp.swift in Sources */,
+				37B490FD2855C387009AF2E2 /* Endpoint.swift in Sources */,
+				37B490FA2855C31E009AF2E2 /* Formatters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +564,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-sample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-sample/Resources\"";
 				DEVELOPMENT_TEAM = 78V6923349;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-sample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-mvvm-sample/Resources\"";
 				DEVELOPMENT_TEAM = 78V6923349;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
